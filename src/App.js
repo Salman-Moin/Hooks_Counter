@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
 function App() {
+  let [number1, setNumber1] = useState(1);
+  let [number2, setNumber2] = useState(100);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Number increment series: {number1}
+      <br />
+      Number decrement series: {number2}
+      <br />
+      <button onClick={() => setNumber1(++number1)}> + </button>
+      <button onClick={() => setNumber2(--number2)}> - </button>
     </div>
   );
 }
