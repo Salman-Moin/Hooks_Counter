@@ -6,9 +6,9 @@ function App() {
 
   return (
     <div>
-      Number increment series: {number1}
+      Number increment series : {number1}
       <br />
-      Number decrement series: {number2}
+      Number decrement series : {number2}
       <br />
       <button onClick={() => setNumber1(++number1)}> + </button>
       <button onClick={() => setNumber2(--number2)}> - </button>
